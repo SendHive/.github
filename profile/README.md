@@ -1,40 +1,51 @@
 # SendHive
 
-SendHive is a high-performance bulk email sender designed to deliver up to 500+ messages in an instant. Built for scalability and efficiency, SendHive streamlines your email campaigns so that promotions, notifications, and newsletters reach your audience quickly and reliably.
+SendHive is a high-performance bulk email sender designed to deliver over 500 emails instantly. Built for scalability and efficiency, SendHive streamlines your email campaigns to ensure promotions, notifications, and newsletters reach your audience quickly and reliably.
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
 - [Usage](#usage)
-
+- [Tech Stack](#tech-stack)
 
 ## Overview
 
-SendHive was developed to simplify bulk email sending without sacrificing speed or deliverability. Whether you're running a marketing campaign or delivering time-sensitive alerts, SendHive ensures your messages are sent at scale with minimal latency.
+SendHive is designed to simplify bulk email sending while maintaining speed, reliability, and deliverability. Whether managing a large-scale marketing campaign or sending time-sensitive alerts, SendHive provides a seamless experience with minimal latency.
 
 ## Features
 
-- **High Delivery Speed:** Send up to 500+ emails in an instant.
-- **Scalability:** Designed to handle campaigns of all sizes.
-- **User-Friendly Interface:** Easy setup and operation.
-- **Robust Infrastructure:** Built with reliability and performance in mind.
-- **Advanced Configuration:** Customize your campaigns with predefined templates, scheduling, and more.
+- 🚀 **High Delivery Speed** – Send over 500+ emails instantly.
+- 📈 **Scalability** – Designed to handle campaigns of any size effortlessly.
+- 🛠️ **User-Friendly Interface** – Simple setup and easy-to-use features.
+- 🔧 **Robust Infrastructure** – Built for reliability and performance at scale.
+- 🗂 **Advanced Configuration** – Customize campaigns with predefined templates, scheduling, and tracking.
+- 🔄 **Queue Management** – Uses RabbitMQ for efficient email processing.
+- ☁️ **Cloud Storage Support** – Integrates with Minio for secure attachment storage.
+- 🔌 **GRPC-Based Microservices** – Ensures efficient and fast communication between services.
 
 ## Usage
 
-After installation, you can start sending bulk emails using SendHive:
+1. **Configure Email Settings**  
+   Update the configuration file with your SMTP credentials, sender details, and email templates.
 
-1. **Configure Your Email Settings:**  
-   Update the configuration file with your SMTP credentials and sender details.
+2. **Create an Email Job**  
+   Define a bulk email job that schedules and sends emails to recipients.
 
-2. **Execute a Bulk Email Campaign:**
+3. **Monitor Status**  
+   Use the status dashboard to track delivery progress and troubleshoot any errors.
 
-    ````sh
-    npm start
-    # or
-    yarn start
-    ````
+## Tech Stack
 
-3. **Monitor the Process:**  
-   The application will output a summary of the emails sent and any errors encountered. Logs are stored in the `/logs` directory.
+SendHive is built using the following technologies:
+
+- **Backend:** Golang
+- **Frontend:** React, Tailwind CSS
+- **Message Queue:** RabbitMQ
+- **Storage:** Minio (S3-compatible object storage)
+- **Communication:** gRPC for inter-service communication
+
+---
+
+⚡ **Get Started Today!** SendHive makes bulk email sending fast, scalable, and reliable. 🚀
+
